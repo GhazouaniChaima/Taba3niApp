@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.badr.happysync.ChatbotConversation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#f9f8f8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:background="#f9f8f8"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/header"
+            android:paddingTop="10dp"
+            app:layout_constraintVertical_bias="0.636">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_example"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f9f8f8"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/chatheader"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/loginheader">
+
+                <ImageView
+                    android:id="@+id/returnbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/returnicon"
+                    android:backgroundTint="#FFF"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="Taba3ni"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/returnbtn"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/settingbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/settingsblack"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#FFF"
+                    />
+                <ImageView
+                    android:id="@+id/gamesbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@id/settingbtn"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/manette"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#FFF"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+
+<RelativeLayout
+    android:id="@+id/layout_chatbox"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    android:background="#00000000"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+
+    <EditText
+        android:id="@+id/edittext_chatbox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Message..."
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+
+        android:paddingLeft="10dp"
+        android:background="@drawable/roundeditext2"
+        android:textColorHint="#979797"
+        android:textColor="#000000"
+        />
+
+
+    <ImageButton
+        android:id="@+id/button_chatbox_send"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@id/edittext_chatbox"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blueroundbtn"
+        android:clickable="true"
+        android:src="@drawable/voices" />
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

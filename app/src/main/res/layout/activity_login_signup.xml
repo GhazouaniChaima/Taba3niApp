@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintTunisBackgrounds"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/medina"
+    tools:context="com.example.badr.happysync.LoginSignup">
+<RelativeLayout
+    android:background="#b9000000"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textSize="45dp"
+        android:textColor="#FFF"
+        android:text="Taba3ni!" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:shadowColor = "#008080"
+        android:shadowRadius="1"
+        android:textSize="18dp"
+        android:elevation="50dp"
+        android:text="#Nebniw_Tunis_Zina"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signupBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundbuttontrans1"
+        android:text="Connexion"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/roundbuttontrans2"
+
+        android:text="Inscription"
+        android:textColor="#000"
+        />
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

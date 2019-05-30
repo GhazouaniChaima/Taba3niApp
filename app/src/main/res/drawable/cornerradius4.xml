@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- solid background -->
+            <gradient
+                android:startColor="#2575fc"
+                android:endColor="#6a11cb"
+                android:angle="180" />
+
+            <!-- draw a border around rectangle shape -->
+            <stroke
+                android:color="#FFF"
+                />
+            <!-- draw 35 dp radius for each corner -->
+            <corners android:topLeftRadius="0dp" android:topRightRadius="20dp"
+                android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+</selector>

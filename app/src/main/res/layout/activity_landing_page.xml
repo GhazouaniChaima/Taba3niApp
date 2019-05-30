@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.example.badr.happysync.LandingPage">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="30dp"
+            android:layout_alignParentTop="true">
+
+
+            <RelativeLayout
+                android:id="@+id/Pageheader"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/loginheader">
+
+                <ImageView
+                    android:id="@+id/returnbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/taba3ni" />
+
+                <ImageView
+                    android:id="@+id/logoutbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/error"
+                    android:backgroundTint="#FFF" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/logoutbtn"
+                    android:background="@drawable/info"
+                    android:backgroundTint="#FFF" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <HorizontalScrollView
+            android:id="@+id/horscroll"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="130dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/lignebus"
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgbus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/bus" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/imgbus"
+                            android:text="Lignes bus"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="35dp"
+                            android:layout_toRightOf="@id/imgbus"
+                            android:text="Consulter le trajet du bus que vous voulez ansi sa prochain arrivée"
+                            android:textColor="#000"
+
+                            />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/maplignemetro"
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imghopital3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/traintgm" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/imghopital3"
+                            android:text="Lignes Metro et TGM"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="35dp"
+                            android:layout_toRightOf="@id/imghopital3"
+                            android:text="Pour le metro aussi vous pouvez consultez la localisations des arret par ligne"
+                            android:textColor="#000"
+
+                            />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imghopital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/hospital" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/imghopital"
+                            android:text="Équipements publics"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="35dp"
+                            android:layout_toRightOf="@id/imghopital"
+                            android:text="Vous pouvez conulter les Équipements publics prés de vous et ses localisation"
+                            android:textColor="#000"
+
+                            />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer"
+            android:layout_below="@id/horscroll"
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mapbusstation"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundeditext"
+                    android:backgroundTint="#efefef"
+                    android:drawableTop="@drawable/busstation"
+                    android:padding="10dp"
+                    android:text="station bus"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+                <Button
+                    android:id="@+id/btnEvent"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundeditext"
+                    android:backgroundTint="#efefef"
+                    android:drawableTop="@drawable/calendar"
+                    android:padding="10dp"
+                    android:text="Evenements"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/parkingBTN"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/roundeditext"
+                    android:backgroundTint="#efefef"
+                    android:drawableTop="@drawable/parking"
+                    android:padding="10dp"
+                    android:text="parking map"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear1"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/kiosqueBTN"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundeditext"
+                    android:backgroundTint="#efefef"
+                    android:drawableTop="@drawable/gas"
+                    android:padding="10dp"
+                    android:text="kiosque map"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/placesbtn"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundeditext"
+                    android:backgroundTint="#efefef"
+                    android:drawableTop="@drawable/mapss"
+                    android:padding="10dp"
+                    android:text="localisation"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/roundeditext"
+                    android:backgroundTint="#efefef"
+                    android:drawableTop="@drawable/metrostation"
+                    android:padding="10dp"
+                    android:text="Station metro"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+
+
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/footerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/footer">
+
+
+                <ImageView
+                    android:id="@+id/settingbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/settingsblack"
+                    android:backgroundTint="#FFF" />
+
+                <ImageView
+                    android:id="@+id/MapButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@id/settingbutton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+
+                    android:background="@drawable/locationpin"
+                    android:backgroundTint="#FFF" />
+
+                <ImageView
+                    android:id="@+id/JeuButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@id/MapButton"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+
+                    android:background="@drawable/consolegame"
+                    android:backgroundTint="#FFF" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/chatbotbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignEnd="@id/footerContainer"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/robotp"
+                android:clickable="true"
+                android:paddingTop="12dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

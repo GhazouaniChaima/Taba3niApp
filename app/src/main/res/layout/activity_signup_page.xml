@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.badr.happysync.SignupPage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFF"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signup"
+            android:layout_alignParentTop="true"
+            />
+        <EditText
+            android:id="@+id/nameSignup"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:hint="Nom"
+            android:textColorHint="#2B32B2"
+            android:inputType="text"
+            android:textColor="#2B32B2"
+            android:layout_below="@id/imgheader"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundeditext"/>
+
+        <EditText
+            android:id="@+id/emailSignup"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:hint="Adresse email"
+            android:textColorHint="#2B32B2"
+            android:inputType="textEmailAddress"
+            android:textColor="#2B32B2"
+
+            android:layout_below="@id/nameSignup"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundeditext"/>
+        <EditText
+            android:id="@+id/passwordSignup"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#2B32B2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/emailSignup"
+            android:textColorHint="#2B32B2"
+            android:layout_centerInParent="true"
+            android:background="@drawable/roundeditext"/>
+
+
+        <Button
+            android:id="@+id/submitSignup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:textColor="#FFF"
+            android:text="Inscription"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:text="Déja inscri ? Connexion"
+            android:id="@+id/textView" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

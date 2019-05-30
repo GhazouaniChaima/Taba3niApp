@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Taba3ni</string>
+    <string name="username">6a332ccb-8d3d-4dca-b7e1-a37a52539b9c</string>
+    <string name="password">86HniPv0NKSJ</string>
+    <string name="workspace">5d1da452-a50a-4c4a-a269-adeeeb5a7fce</string> <!-- Chatbot français -->
+    <string name="workspace2">d83bab78-97fc-4bf2-af47-8ccf38e9dd01</string> <!-- Chatbot du map -->
+    <string name="workspace3">b4ccd2f0-82af-4280-af59-32c88f693294</string> <!-- Chatbot des nom des villes -->
+    <string name="workspace4">f6a97045-60c4-4e1f-b4bc-9f958a506bda</string> <!-- Chatbot anglais -->
+    <string name="notification_text">this is notification</string>
+
+    <string name="username2">6a332ccb-8d3d-4dca-b7e1-a37a52539b9c</string>
+    <string name="password2">86HniPv0NKSJ</string>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_event_page">Map</string>
+
+    <string name="spinner_message">Selectionner un theme</string>
+
+    <string-array name="theme_array">
+        <item>Bleu(default)</item>
+        <item>Rouge</item>
+        <item>Violet</item>
+        <item>Rose</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_marafe9">Map</string>
+</resources>

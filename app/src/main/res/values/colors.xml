@@ -7,4 +7,9 @@
     <color name="metrocolor">#348F50</color>
     <color name="kiosquecolor">#93291E</color>
     <color name="parkingcolor">#2948ff</color>
+
+    <color name="newblue">#1976D2</color>
+    <color name="neworange">#E64A19</color>
+    <color name="newciel">#0097A7</color>
+    <color name="newpink">#FE2A72</color>
 </resources>
